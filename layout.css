@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: 'Cabin', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('study.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 14rem;
+  height: 19rem;
+  background-color: black;
+  border: 5px double whitesmoke;
+  border-radius: 10px;
+}
+
+.screen{
+  display: flex;
+  flex-grow: 1;
+  border-bottom: 1px solid whitesmoke;
+  color:whitesmoke;
+  font-size: 30px;
+  font-weight: 500px;
+  justify-content:flex-end;
+  align-items: flex-end;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.buttons{
+  display: flex;
+  flex-grow: 1.5;
+  flex-direction: column;
+}
+
+.button_row{
+  display: flex;
+  flex:1;
+  flex-direction: row;
+}
+
+.button{
+  display: flex;
+  flex: 1;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.op{
+  border:1.5px solid black;
+  border-radius: 5px;
+  box-shadow:2px gray;
+  background-color: orange;
+  font-size: 1.5rem;
+  
+}
+.gray{
+  border:1.5px solid black;
+  border-radius: 5px;
+  box-shadow:2px gray;
+  background-color: gray;
+}
+.dark{
+  border:1.5px solid black;
+  border-radius: 5px;
+  box-shadow:2px gray;
+  background-color: darkslategray;
+}
+
+
+
+.op:active{
+  background-color: darkorange;
+}
+.gray:active{
+  background-color:dimgray;
+}
+.dark:active{
+  background-color:cadetblue;
+}
