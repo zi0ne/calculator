@@ -5,6 +5,7 @@
 }
 
 body{
+
   font-family: 'Cabin', sans-serif;
   height: 100vh;
   display: flex;
@@ -19,16 +20,17 @@ body{
   display: flex;
   flex-direction: column;
   width: 14rem;
-  height: 19rem;
+  height: 20rem;
   background-color: black;
-  border: 5px double whitesmoke;
+  border: 5px double #808080;
   border-radius: 10px;
+  
 }
 
 .screen{
   display: flex;
-  flex-grow: 1;
-  border-bottom: 1px solid whitesmoke;
+  flex-grow: 3;
+  border-bottom: 1px solid #808080;
   color:whitesmoke;
   font-size: 30px;
   font-weight: 500px;
@@ -40,7 +42,7 @@ body{
 
 .buttons{
   display: flex;
-  flex-grow: 1.5;
+  flex-grow: 1;
   flex-direction: column;
 }
 
@@ -52,32 +54,53 @@ body{
 
 .button{
   display: flex;
-  flex: 1;
   color: whitesmoke;
   justify-content: center;
   align-items: center;
-  
 }
 
 .op{
+  display: flex;
+  flex: 1;
   border:1.5px solid black;
   border-radius: 5px;
-  box-shadow:2px gray;
-  background-color: orange;
-  font-size: 1.5rem;
+  box-shadow:  0.5px 0.5px 0.5px #d98c00,
+              0.5px 0.5px 0.5px #ffbe00;
+  background-color: orange; 
+  font-size: 2rem;
   
 }
 .gray{
+  display: flex;
+  flex : 1;
   border:1.5px solid black;
   border-radius: 5px;
-  box-shadow:2px gray;
+  background: gray;
+  box-shadow:  3px 3px 6px #363636,
+              -3px -3px 6px #4a4a4a;
   background-color: gray;
 }
-.dark{
+.grey{
+  display: flex;
+  flex: 2.1;
   border:1.5px solid black;
   border-radius: 5px;
-  box-shadow:2px gray;
-  background-color: darkslategray;
+  background: gray;
+  box-shadow:  3px 3px 6px #363636,
+              -3px -3px 6px #4a4a4a;
+  background-color: gray;
+ 
+}
+
+.dark{
+  display: flex;
+  flex: 1;
+  border:1.5px solid black;
+  border-radius: 5px;
+  background: #313030;
+box-shadow:  3px 3px 6px #2a2929,
+             -3px -3px 6px #383737;
+  background-color: #404040;
 }
 
 
@@ -88,6 +111,9 @@ body{
 .gray:active{
   background-color:dimgray;
 }
+.grey:active{
+  background-color: dimgray;
+}
 .dark:active{
-  background-color:cadetblue;
+  background-color:#505050;
 }
