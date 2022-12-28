@@ -27,6 +27,17 @@ body{
   
 }
 
+.seceret{
+  display: flex;
+  height: 0.7rem;
+  width: 3rem;
+  border-bottom: 1px double whitesmoke;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-left: 85px;
+  font-size: 0;
+}
+
 .screen{
   display: flex;
   flex-grow: 3;
@@ -116,4 +127,18 @@ box-shadow:  3px 3px 6px #2a2929,
 }
 .dark:active{
   background-color:#505050;
+}
+.seceret:hover{
+  height: 20%;
+  width: 100%;
+  background-color: black;
+  margin-left: 0;
+  border-bottom: black;
+  color: whitesmoke;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  border-bottom: 1px solid gray;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
